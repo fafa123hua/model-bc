@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nssc.bc.mapper.NsscProcessingCenterVectorMapper">
+
+    <resultMap id="BaseResultMap" type="nssc.bc.entity.NsscProcessingCenterVector">
+            <result property="flowId" column="flow_id" jdbcType="INTEGER"/>
+            <result property="centerId" column="center_id" jdbcType="INTEGER"/>
+            <result property="satelliteId" column="satellite_id" jdbcType="INTEGER"/>
+            <result property="taskId" column="task_id" jdbcType="INTEGER"/>
+            <result property="imgId" column="img_id" jdbcType="INTEGER"/>
+            <result property="imgTime" column="img_time" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        flow_id,center_id,satellite_id,
+        task_id,img_id,img_time
+    </sql>
+</mapper>

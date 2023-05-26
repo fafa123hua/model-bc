@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nssc.bc.mapper.NsscProcessingCenterMapper">
+
+    <resultMap id="BaseResultMap" type="nssc.bc.entity.NsscProcessingCenter">
+            <id property="flowId" column="flow_id" jdbcType="INTEGER"/>
+            <result property="frequency" column="frequency" jdbcType="INTEGER"/>
+            <result property="centerId" column="center_id" jdbcType="INTEGER"/>
+            <result property="receiveData" column="receive_data" jdbcType="INTEGER"/>
+            <result property="dataManageWait" column="data_manage_wait" jdbcType="INTEGER"/>
+            <result property="taskManageWait" column="task_manage_wait" jdbcType="INTEGER"/>
+            <result property="taskNum" column="task_num" jdbcType="INTEGER"/>
+            <result property="endTime" column="end_time" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        flow_id,frequency,center_id,
+        receive_data,data_manage_wait,task_manage_wait,
+        task_num,end_time
+    </sql>
+</mapper>
