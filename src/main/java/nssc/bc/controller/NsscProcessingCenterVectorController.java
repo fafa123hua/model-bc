@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import nssc.bc.common.R;
 import nssc.bc.entity.NsscProcessingCenterVector;
 import nssc.bc.service.NsscProcessingCenterVectorService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/process/center/vector")
 @AllArgsConstructor
+@CrossOrigin
 public class NsscProcessingCenterVectorController {
     final NsscProcessingCenterVectorService nsscProcessingCenterVectorService;
 

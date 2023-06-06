@@ -5,10 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import nssc.bc.common.R;
 import nssc.bc.entity.NsscProcessingCenter;
 import nssc.bc.service.NsscProcessingCenterService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/process/center")
 @AllArgsConstructor
+@CrossOrigin
 public class NsscProcessingCenterController {
 
     final NsscProcessingCenterService nsscProcessingCenterService;
