@@ -18,10 +18,10 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/file")
+@RequestMapping("/processType")
 @AllArgsConstructor
 @CrossOrigin
-public class FileInfoController {
+public class ProcessTypeController {
 
     @Value("${myapp.ces}")
     private String myCes;
@@ -86,5 +86,5 @@ public class FileInfoController {
 
 
 
-    public FileInfoController() {}
+    public ProcessTypeController() {}
 }

@@ -1,5 +1,5 @@
 server:
-  port: 8801
+  port: 8802
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/nssc?characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false

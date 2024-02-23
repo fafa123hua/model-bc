@@ -14,3 +14,5 @@ spring:
       fail_on_unknown_properties: false
     # 字段为null或者""就不返回给前端
 #    default-property-inclusion: always
+myapp:
+  ces: D:\zqh\测试\WJDQCS
